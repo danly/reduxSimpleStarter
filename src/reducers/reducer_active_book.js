@@ -1,0 +1,9 @@
+// State argument is not application state, only the state this reducer is responsible or
+export default function(state = null, action) {
+  switch(action.type) {
+  case 'BOOK_SELECTED':
+    // always return a fresh object
+    return action.payload;
+  }
+  return state;
+}
